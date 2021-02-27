@@ -5,7 +5,7 @@ require_relative '../config/environment'
 puts "Welcome to Tic Tac Toe!"
 
 def start_game
-  puts "Please choose your play mode:(0, 1, 2, or wargames)\n0 - AI & AI\n1 - You & AI\n2 - You & Another player\nwargames - Try it yourself!"
+  puts "Please choose your play mode:(0, 1, 2, or wargames)\n0 - AI & AI\n1 - You & AI\n2 - You & Another player"
 
   user_choise = gets.strip
 
@@ -22,13 +22,6 @@ def start_game
 
   when "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O")).play
-      puts "Awesome! Would you like to play again?"
-      loop_game
-
-  when "wargames"
-    100.times do
-      Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
-    end
       puts "Awesome! Would you like to play again?"
       loop_game
 
