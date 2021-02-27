@@ -69,7 +69,7 @@ end
 def play
    turn until over?
    if won?
-     puts "Congratulations #{winner}!"
+     puts "Congratulations #{win_combination}!"
    elsif draw?
      puts "Cat's Game!"
    end
