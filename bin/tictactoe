@@ -24,7 +24,7 @@ def start_game
     Game.new(Players::Human.new("X"), Players::Human.new("O")).play
       puts "Awesome! Would you like to play again?"
       loop_game
-    
+
   when "wargames"
     100.times do
       Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
@@ -34,7 +34,7 @@ def start_game
 
   else
     puts "Please input an valid entry (0, 1, or 2)."
-    start_game      
+    start_game
   end
 end
 
